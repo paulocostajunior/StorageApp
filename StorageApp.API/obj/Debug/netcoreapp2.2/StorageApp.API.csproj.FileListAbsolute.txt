@@ -1,0 +1,14 @@
+C:\code-studies\angular-dotnet\StorageApp\StorageApp.API\bin\Debug\netcoreapp2.2\StorageApp.API.deps.json
+C:\code-studies\angular-dotnet\StorageApp\StorageApp.API\bin\Debug\netcoreapp2.2\StorageApp.API.runtimeconfig.json
+C:\code-studies\angular-dotnet\StorageApp\StorageApp.API\bin\Debug\netcoreapp2.2\StorageApp.API.runtimeconfig.dev.json
+C:\code-studies\angular-dotnet\StorageApp\StorageApp.API\bin\Debug\netcoreapp2.2\StorageApp.API.dll
+C:\code-studies\angular-dotnet\StorageApp\StorageApp.API\bin\Debug\netcoreapp2.2\StorageApp.API.pdb
+C:\code-studies\angular-dotnet\StorageApp\StorageApp.API\obj\Debug\netcoreapp2.2\StorageApp.API.csprojAssemblyReference.cache
+C:\code-studies\angular-dotnet\StorageApp\StorageApp.API\obj\Debug\netcoreapp2.2\StorageApp.API.csproj.CoreCompileInputs.cache
+C:\code-studies\angular-dotnet\StorageApp\StorageApp.API\obj\Debug\netcoreapp2.2\StorageApp.API.RazorAssemblyInfo.cache
+C:\code-studies\angular-dotnet\StorageApp\StorageApp.API\obj\Debug\netcoreapp2.2\StorageApp.API.RazorAssemblyInfo.cs
+C:\code-studies\angular-dotnet\StorageApp\StorageApp.API\obj\Debug\netcoreapp2.2\StorageApp.API.AssemblyInfoInputs.cache
+C:\code-studies\angular-dotnet\StorageApp\StorageApp.API\obj\Debug\netcoreapp2.2\StorageApp.API.AssemblyInfo.cs
+C:\code-studies\angular-dotnet\StorageApp\StorageApp.API\obj\Debug\netcoreapp2.2\StorageApp.API.RazorTargetAssemblyInfo.cache
+C:\code-studies\angular-dotnet\StorageApp\StorageApp.API\obj\Debug\netcoreapp2.2\StorageApp.API.dll
+C:\code-studies\angular-dotnet\StorageApp\StorageApp.API\obj\Debug\netcoreapp2.2\StorageApp.API.pdb

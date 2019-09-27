@@ -1,0 +1,26 @@
+<div class="card mb-4 shadow-sm">
+  <!-- <img
+    class="bd-placeholder-img card-img-top"
+    width="100%"
+    height="225"  
+    src="../../../assets/300.png"
+    preserveAspectRatio="xMidYMid slice"
+    focusable="false"
+    role="img"
+  /> -->
+  
+  <div class="card-body">
+    <p>{{product.name}}</p>
+    <p class="card-text">
+      {{product.description}}
+    </p>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="btn-group">
+        <button type="button" class="btn btn-lg btn-outline-success" (click)="addProduct()">+</button>
+        <button type="button" class="btn btn-lg btn-outline-danger" (click)="subtractProduct()">-</button>
+      </div>
+        <small class="text-muted">{{this.product.quantity}} {{product.packageType.description}}</small>
+      
+    </div>
+  </div>
+</div>

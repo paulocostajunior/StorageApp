@@ -1,0 +1,10 @@
+<div class="container mt-5">
+  <div>
+    <input class="form-control mr-sm-2" type="text" [(ngModel)]="userFilter.name" placeholder="Search" aria-label="Search">
+  </div>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let product of products | filterBy: userFilter">
+      <app-product-card [product]="product"></app-product-card>
+    </div>    
+  </div>
+</div>
