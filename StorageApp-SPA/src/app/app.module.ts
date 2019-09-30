@@ -13,13 +13,15 @@ import { ProductCardComponent } from './products/product-card/product-card.compo
 import { ProductListComponent } from './products/product-list/product-list.component';
 import { ProductService } from './_services/product.service';
 import { ProductListResolver } from './_resolvers/product-list.resolver';
+import { RegisterProductComponent } from './register-product/register-product.component';
 
 @NgModule({
    declarations: [
       AppComponent,
       NavComponent,
       ProductCardComponent,
-      ProductListComponent
+      ProductListComponent,
+      RegisterProductComponent
    ],
    imports: [
       BrowserModule,

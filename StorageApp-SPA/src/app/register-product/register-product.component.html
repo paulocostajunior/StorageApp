@@ -1,0 +1,39 @@
+<h2 class="text-center mb-4">Register a new Product</h2>
+
+<div class="row justify-content-center">
+  <div class="col-4">
+    <form [formGroup]="registerProductForm" (ngSubmit)="register()">
+      
+      <div class="form-group">
+        <input [ngClass]="{'is-invalid': registerProductForm.get('name').errors && registerProductForm.get('name').touched}" class="form-control"
+          placeholder="name" formControlName="name">
+        <div class="invalid-feedback" *ngIf="registerProductForm.get('name').touched && registerProductForm.get('name').hasError('required')">name is required</div>
+      </div>
+
+      <div class="form-group">
+        <input [ngClass]="{'is-invalid': registerProductForm.get('description').errors && registerProductForm.get('description').touched}" class="form-control"
+          placeholder="description" formControlName="description">
+        <div class="invalid-feedback" *ngIf="registerProductForm.get('description').touched && registerProductForm.get('description').hasError('required')">description is required</div>
+      </div>
+
+      <div class="form-group">
+        <input type="number" [ngClass]="{'is-invalid': registerProductForm.get('quantity').errors && registerProductForm.get('quantity').touched}" class="form-control"
+          placeholder="quantity" formControlName="quantity">
+        <div class="invalid-feedback" *ngIf="registerProductForm.get('quantity').touched && registerProductForm.get('quantity').hasError('required')">quantity is required</div>
+      </div>
+
+      <div class="form-group">
+        <label for="packageType">PackageType: </label>
+        <select class="form-control" formControlName="packageType">
+          <option value="1">Bottle</option>
+          <option value="2">Sacks</option>
+        </select>
+      </div>
+
+      <div class="form-group text-center">
+        <button class="btn btn-success" [disabled]=!registerProductForm.valid type="submit">Register</button>
+      </div>
+      
+    </form>
+  </div>
+</div>
