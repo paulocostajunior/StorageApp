@@ -8,7 +8,7 @@ import { RegisterProductComponent } from './register-product/register-product.co
 
 export const appRoutes: Routes = [
     { path: '', component: ProductListComponent, resolve: { products: ProductListResolver }},
-    { path: 'add-product', component: RegisterProductComponent},
+    { path: 'register-product', component: RegisterProductComponent},
     { path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 

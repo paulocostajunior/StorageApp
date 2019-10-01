@@ -32,5 +32,18 @@ namespace StorageApp.API.Data
         {
             return await _context.SaveChangesAsync() > 0;
         }
+
+        public async Task<bool> Register(Product product)
+        {
+            await _context.Products.AddAsync(product);
+            return await _context.SaveChangesAsync() > 0;
+        }
+
+        public async Task<bool> ProductExists(string name)
+        {
+            if (await _context.Products.AnyAsync(x => x.Name == name))
+                return true;
+            return false;
+        }
     }
 }

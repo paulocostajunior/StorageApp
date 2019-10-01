@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StorageApp.API.Data;
 using StorageApp.API.Dtos;
+using StorageApp.API.Models;
 
 namespace StorageApp.API.Controllers
 {
@@ -48,6 +49,19 @@ namespace StorageApp.API.Controllers
                 return NoContent();
 
             throw new Exception($"Updating user {id} failed on save");
+        }
+
+        [HttpPost("register")]
+        public async Task<IActionResult> Register(Product product)
+        {
+            if (await _repo.ProductExists(product.Name))
+                return BadRequest("Product already exists");
+
+            if (await _repo.Register(product))
+                    return NoContent();
+
+            throw new Exception($"Error while inserting the product");
+        
         }
     }
 }

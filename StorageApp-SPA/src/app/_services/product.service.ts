@@ -19,4 +19,8 @@ export class ProductService {
     updateQuantity(id: number, product: Product) {
         return this.http.put(this.baseUrl + 'products/' + id, product);
     }
+
+    register(product: Product) {
+        return this.http.post(this.baseUrl + 'products/register', product);
+    }
 }

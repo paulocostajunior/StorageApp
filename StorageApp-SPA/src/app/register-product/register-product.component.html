@@ -18,13 +18,13 @@
 
       <div class="form-group">
         <input type="number" [ngClass]="{'is-invalid': registerProductForm.get('quantity').errors && registerProductForm.get('quantity').touched}" class="form-control"
-          placeholder="quantity" formControlName="quantity">
+          placeholder="quantity" formControlName="quantity"/>
         <div class="invalid-feedback" *ngIf="registerProductForm.get('quantity').touched && registerProductForm.get('quantity').hasError('required')">quantity is required</div>
       </div>
 
       <div class="form-group">
-        <label for="packageType">PackageType: </label>
-        <select class="form-control" formControlName="packageType">
+        <label for="packageTypeId">PackageType: </label>
+        <select class="form-control" formControlName="packageTypeId">
           <option value="1">Bottle</option>
           <option value="2">Sacks</option>
         </select>

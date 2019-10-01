@@ -8,6 +8,8 @@ namespace StorageApp.API.Data
     {
         Task<List<Product>> GetProducts();
         Task<Product> GetProduct(int id);
-        Task<bool> SaveAll();    
+        Task<bool> SaveAll();
+        Task<bool> Register(Product product);
+        Task<bool> ProductExists(string name);
     }
 }
